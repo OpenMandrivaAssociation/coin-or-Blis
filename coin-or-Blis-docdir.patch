@@ -1,0 +1,21 @@
+diff -up Blis-0.93.11/Makefile.in.orig Blis-0.93.11/Makefile.in
+--- Blis-0.93.11/Makefile.in.orig	2014-03-13 13:49:55.715660033 -0300
++++ Blis-0.93.11/Makefile.in	2014-03-13 13:50:08.835660535 -0300
+@@ -329,7 +329,7 @@ EXTRA_DIST = examples/BlisMain.cpp examp
+ ########################################################################
+ pkgconfiglibdir = $(libdir)/pkgconfig
+ pkgconfiglib_DATA = blis.pc
+-addlibsdir = $(DESTDIR)$(datadir)/coin/doc/Blis
++addlibsdir = $(DESTDIR)$(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ 
+ ########################################################################
+ #                         Maintainer Stuff                             #
+@@ -338,7 +338,7 @@ addlibsdir = $(DESTDIR)$(datadir)/coin/d
+ # Files that are generated and should be cleaned with make distclean
+ DISTCLEANFILES = $(am__append_3) $(VPATH_DISTCLEANFILES)
+ DocFiles = README AUTHORS LICENSE
+-DocInstallDir = $(datadir)/coin/doc/$(PACKAGE_NAME)
++DocInstallDir = $(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ all: all-recursive
+ 
+ .SUFFIXES:
