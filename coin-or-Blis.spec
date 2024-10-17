@@ -7,7 +7,7 @@ Summary:	BLIS (BiCePS Linear Integer Solver)
 Version:	0.93.11
 Release:	2%{?dist}
 License:	EPL
-URL:		http://projects.coin-or.org/CHiPPS
+URL:		https://projects.coin-or.org/CHiPPS
 Source0:	http://www.coin-or.org/download/pkgsource/CHiPPS/%{module}-%{version}.tgz
 Source1:	%{name}.rpmlintrc
 BuildRequires:	blas-devel
